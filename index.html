@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+  </head>
+
+  <body onload = "setup();">
+    <div id="topRow" class = "well">
+      <div class="btn-group">
+        <button id = "reset-btn" type="button" onClick="document.location.reload(true)" class="btn btn-danger btn-lg"> Reset </button>
+        <button id = "food-btn" type="button" onClick="newFood()" class="btn btn-warning btn-lg"> Food </button>
+        <button id = "party-btn" type="button" onClick="party()" class="btn btn-success btn-lg"> Dance </button>
+      </div>
+    </div>
+    <div class="progress">
+    <div id ="score_lbl" class="progress-bar progress-bar-striped active" role="progressbar" onClick="move()" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    </div>
+  </div>
+    <canvas id="game_cnv" width="930" height="930"></canvas>
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
