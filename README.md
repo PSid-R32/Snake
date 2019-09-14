@@ -1,7 +1,4 @@
-# projects
-A compilation of completed, work in progress, and attempted projects
-
-# snake_game
+# Snake Game
 For this project, I attempted to tackle a complicated task
 by trying to translate my idea for the game without considering
 the complexity, logistics, and technicalities. After pivoting my
